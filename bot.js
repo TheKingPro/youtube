@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 var prefix = "c";
-var adminprefix = 'c'
+var adminprefix = 'v'
 
 const developers = ["457655651984867331"]
 client.on('message', message => {
@@ -12,7 +12,7 @@ client.on('message', message => {
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-     if (message.content === (adminprefix + "leave")) {
+     if (message.content === (adminprefix + "off")) {
     message.guild.leave();        
   } else  
   if (message.content.startsWith(adminprefix + 'setw')) {
